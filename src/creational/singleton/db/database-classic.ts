@@ -21,4 +21,7 @@ export class MyDatabaseClassic{
     getUsers(): User[] {
         return this.users;
     }
+    removeUser(user: User): void {
+        this.users = this.users.filter(u => u !== user);
+    }
 }

@@ -1,7 +1,5 @@
-interface User {
-    name: string;
-    age: number;
-}
+import { User } from "../interfaces/IUser.js";
+
 export class MyDatabaseClassic{
     private  static instance: MyDatabaseClassic | null = null;
     private users: User[] = [];

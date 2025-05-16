@@ -24,4 +24,10 @@ export class MyDatabaseClassic{
     removeUser(user: User): void {
         this.users = this.users.filter(u => u !== user);
     }
+    showUsers(): void {
+        for (const user of this.users) {
+
+            console.log(`Name: ${user.name}, Age: ${user.age}`);
+        }
+    }
 }

@@ -27,11 +27,8 @@ export class MainDishBuilder implements MealBuilderProtocol{
         return this;
    }
    getMeal(): MealBox {
-    this.reset();
         return this._meal;
    }
-   reset(): void {
-        this._meal = new MealBox([]);
-   }
+   
  
 }

@@ -1,8 +1,9 @@
-import { MyDatabaseClassic } from "./db/database-classic.js";
-export const myDatabaseClassic1 = MyDatabaseClassic.getInstance();
-myDatabaseClassic1.addUser({ name: "John", age: 30 });
-myDatabaseClassic1.addUser({ name: "Jane", age: 25 });
-myDatabaseClassic1.addUser({ name: "Doe", age: 40 });
-myDatabaseClassic1.addUser({ name: "Alice", age: 35 });
-myDatabaseClassic1.showUsers();
+
+import { MyDatabaseModule } from "./db/my_database-module.js";
+export const myDatabaseModule = MyDatabaseModule;
+myDatabaseModule.addUser({ name: "John", age: 30 });
+myDatabaseModule.addUser({ name: "Jane", age: 25 });
+myDatabaseModule.addUser({ name: "Doe", age: 40 });
+myDatabaseModule.addUser({ name: "Alice", age: 35 });
+myDatabaseModule.showUsers();
 

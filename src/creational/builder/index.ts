@@ -11,3 +11,4 @@ const mealBox = new Rice("Prato", 13.0);
 for (const meal of [rice, beans, meat, beverage, dessert]) {
     console.log(`Meal: ${meal.getName()}, Price: $${meal.getPrice()}`);
 }
+console.log(`Meal Box: ${mealBox.getName()}, Price: $${mealBox.getPrice()}`);

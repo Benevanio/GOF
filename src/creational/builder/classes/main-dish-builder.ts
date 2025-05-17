@@ -17,7 +17,7 @@ export class MainDishBuilder implements MealBuilderProtocol{
    }
 
    makeBeverage(): this {
-        const beverage = new Rice("Beverage", 5);
+        const beverage = new Rice("Cachaça", 5);
         this._meal.add(beverage);
         return this;
    }

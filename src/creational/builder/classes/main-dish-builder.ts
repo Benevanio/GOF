@@ -26,5 +26,8 @@ export class MainDishBuilder implements MealBuilderProtocol{
         this._meal.add(dessert);
         return this;
    }
+   getMeal(): MealBox {
+        return this._meal;
+   }
  
 }

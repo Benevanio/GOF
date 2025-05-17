@@ -22,7 +22,7 @@ export class MainDishBuilder implements MealBuilderProtocol{
         return this;
    }
    makeDessert(): this {
-        const dessert = new Rice("Dessert", 5);
+        const dessert = new Rice("Sua mae", 5);
         this._meal.add(dessert);
         return this;
    }

@@ -1,19 +1,29 @@
 import { MealBuilderProtocol } from "../interfaces/meal-builder-protocol.js";
 import { MealBox } from "./meal-box.js";
+import { Beans, Meat } from "./meals.js";
+import { Rice } from "./rice.js";
 
 export class MainDishBuilder implements MealBuilderProtocol{
    private _meal: MealBox = new MealBox([]);
    makeMeal(): this {
-        this._meal.add(new MealBox([]));
+        const rice = new Rice("Rice", 10);
+        const beans = new Beans("Beans", 5);
+        const meat = new Meat("Meat", 20);
+        this._meal.add(rice);
+        this._meal.add(beans);
+        this._meal.add(meat);
+
         return this;
    }
 
    makeBeverage(): this {
-        this._meal.add(new MealBox([]));
+        const beverage = new Rice("Beverage", 5);
+        this._meal.add(beverage);
         return this;
    }
    makeDessert(): this {
-        this._meal.add(new MealBox([]));
+        const dessert = new Rice("Dessert", 5);
+        this._meal.add(dessert);
         return this;
    }
  

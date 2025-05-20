@@ -1,13 +1,7 @@
-import { IVehicle } from "../interfaces/IVehicle.js";
+import { Vehicle } from "./Vehicle.js";
 
-export class Bicycle implements IVehicle {
-    constructor(private name: string) {
+export class Bicycle extends Vehicle {
+    constructor(name: string) {
+        super(name);
     }
-    pickUp(Customer: string): void {
-        console.log(`Bicycle ${this.name} is picking up ${Customer}`);
-    }
-    stop(): void {
-        console.log(`Bicycle ${this.name} has stopped`);
-    }
-
 }

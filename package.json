@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --watch src --exec 'node --loader ts-node/esm' src/creational/abstract-factory/index.ts"
+    "start": "nodemon --watch src --exec 'node --loader ts-node/esm' src/structural/composite/example.ts"
   },
   "keywords": [],
   "author": "",

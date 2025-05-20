@@ -1,5 +1,3 @@
-import { Car } from "./classes/Vehicle/car.js";
+import { getRandomVehicle } from "./main/random-vehicle.js";
 
-const fusca = new Car("Fusca");
-fusca.pickUp("Lucas");
-fusca.stop();
+getRandomVehicle();

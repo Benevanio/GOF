@@ -5,7 +5,6 @@ import { VehicleFactory } from "../factories/vehicle-factory.js";
 export function getRandomVehicle(): Vehicle {
     const carFactory = new VehicleFactory();
     const bicycleFactory = new BicycleFactory();
-    const car1 = carFactory.getVehicle("Fusca");
     const arrayFactories = [
         "Fusca",
         "Civic",

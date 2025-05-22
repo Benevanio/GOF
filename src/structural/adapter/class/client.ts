@@ -1,8 +1,6 @@
-import { isEmail } from "validator";
-
 const email = "Benevaniosantos@gmail.com";
 
-if (isEmail(email)) {
+if (email.includes("@")) {
     console.log("Valid email");
 }
 else {

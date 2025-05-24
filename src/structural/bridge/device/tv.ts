@@ -6,7 +6,7 @@ export class TV implements DeviceImplementation {
     private volume: number = 5;
 
     getName(): string {
-        return "Radio";
+        return "TV";
     }
 
     setPower(power: boolean): void {

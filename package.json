@@ -4,7 +4,7 @@
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --watch src --exec 'node --loader ts-node/esm' src/structural/bridge/example.ts"
+    "start": "nodemon --watch src --exec 'node --loader ts-node/esm' src/structural/decorator/example.ts"
   },
   "keywords": [],
   "author": "",

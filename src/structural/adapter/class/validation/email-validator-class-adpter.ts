@@ -1,4 +1,4 @@
-import { EmailValidatorProtocol } from './validation/Iemail-validator-protocol';
+import { EmailValidatorProtocol } from '../../interface/Iemail-validator-protocol';
 
 export class EmailValidatorAdapter implements EmailValidatorProtocol {
     isEmail(email: string): boolean {

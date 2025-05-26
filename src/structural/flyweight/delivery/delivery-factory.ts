@@ -5,7 +5,9 @@ import { IDeliveryFlyweight } from "./Idelivery-flyweight";
 export class DeliveryFactory {
     private readonly locations: Map<string, DeliveryLocation> = new Map();
     private createID(data: DeliveryLocationData): string {
-        return Object.values(data).map(item => item.replace(/\s+/g, '-').toLowerCase()).join('-');
+        return Object.values(data)
+            .map(item => String(item).replace(/\s+/g, '-').toLowerCase())
+            .join('-');
 
     }
     makeLocation(
@@ -18,6 +20,10 @@ export class DeliveryFactory {
             );
         }
         return this.locations.get(id) as IDeliveryFlyweight;
+    }
+
+    getLocation(id: string): IDeliveryFlyweight | undefined {
+        return this.locations.get(id);
     }
 
 }

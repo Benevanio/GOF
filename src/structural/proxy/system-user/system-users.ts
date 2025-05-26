@@ -1,7 +1,7 @@
 import { Address } from "../types/address";
-import { SystemUserProtocol } from "./ISystem-users";
+import { ISystemUserProtocol } from "./ISystem-users";
 
-export class AdminUser implements SystemUserProtocol {
+export class AdminUser implements ISystemUserProtocol {
     public FirstName: string;
     public LastName: string;
     public Email: string;

@@ -1,6 +1,6 @@
 import { Address } from "../types/address";
 
-export interface SystemUserProtocol {
+export interface ISystemUserProtocol {
     FirstName: string;
     LastName: string;
     Email: string;

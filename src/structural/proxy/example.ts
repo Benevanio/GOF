@@ -1,8 +1,9 @@
-import { AdminUser } from "./system-user/system-users";
+import { SystemUserProxy } from "./system-user/system-user-proxy";
 
-const adminUser = new AdminUser("John", "Doe", "john.doe@example.com");
-adminUser.getAddress().then(addresses => {
-    console.log("Addresses:", addresses);
+
+const user = new SystemUserProxy("John ", "Doe", "john.doe@example.com");
+user.getAddress().then(addresses => {
+    console.log("User Addresses:", addresses);
 }).catch(error => {
     console.error("Error fetching addresses:", error);
 });
